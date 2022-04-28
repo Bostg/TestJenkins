@@ -1,0 +1,16 @@
+syntax: glob
+obj/*
+bin/*
+*/obj/*
+*/bin/*
+**/obj/*
+**/bin/*
+***/obj/*
+***/bin/*
+*/Debug/
+*.user
+*.ncb
+*.suo
+*.aps
+*/~*
+.vs/
