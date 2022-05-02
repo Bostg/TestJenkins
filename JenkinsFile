@@ -2,16 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('clean') {
-            steps {
-                bat 'if exist TestJenkins rmdir TestJenkins /s /q'
-            }
-        }
-        stage('clone') {
-            steps {
-                bat 'git clone https://github.com/Bostg/TestJenkins'
-            }
-        }
         stage('build') {
             steps {
                 bat 'dotnet build TestJenkins/TestJenkins'
